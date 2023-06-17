@@ -1,15 +1,15 @@
 {
-  "AWSEBDockerrunVersion": "1",
+  "AWSEBDockerrunVersion": "2",
   "containerDefinitions": [
     {
       "name": "fs-sid-aws-api",
       "image": "kraken2091/fs-sid-aws-api:21.02.2023.15.22.51",
       "essential": true,
       "memory": 512,
-      "Ports": [
+      "portMappings": [
         {
-          "HostPort": 80,
-          "ContainerPort": 8080
+          "hostPort": 80,
+          "containerPort": 8080
         }
       ],
       "environment": [
