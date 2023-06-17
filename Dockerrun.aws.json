@@ -6,10 +6,10 @@
       "image": "kraken2091/fs-sid-aws-api:21.02.2023.15.22.51",
       "essential": true,
       "memory": 512,
-      "portMappings": [
+      "Ports": [
         {
-          "hostPort": 80,
-          "containerPort": 8080
+          "HostPort": 80,
+          "ContainerPort": 8080
         }
       ],
       "environment": [
